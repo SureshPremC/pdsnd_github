@@ -2,7 +2,7 @@
 Wednesday 29th May 2019
 
 ### Project Name
-Bikeshare Analysis - NumPy & Panda
+Bikeshare Analysis - NumPy & Panda Dataframes
 
 ### Project Description
 Python to explore data related to bike share systems for three major cities in the United States—Chicago, New ### York City, and Washington.
