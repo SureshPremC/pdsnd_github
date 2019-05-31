@@ -49,18 +49,18 @@ def get_filters():
 
     print('Hello! Let\'s explore some US bikeshare data!')
     while True: #TO DO: get user input for city(chicago, new york city, washington).HINT: Use a while loop to handle invalid inputs
-        print('Enter the name of the city that you would like to analyse data for')
+        print('Enter the name of the city that you would like to analyse data for : ')
         city = input()
         city = city.lower()
         if city in validCities: break
     while True: #TO DO: get user input for month(all, january, february, ..., june)
-        print('Enter the month that you would like to analyse data for')
+        print('Enter the month that you would like to analyse data for : ')
         month = input()
         month = month.lower()
         if month in validMonths.keys(): break
     month = validMonths[month]
     while True: #TO DO: get user input for day of week(all, monday, tuesday, ...sunday)
-        print('Enter the day of the week you would like to analyse data for')
+        print('Enter the day of the week you would like to analyse data for : ')
         day = input()
         day = day.lower()
         if day in validDays.keys(): break
@@ -79,7 +79,7 @@ def load_data(city, month, day):
     to apply no day filter
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day """
-    
+
     df = pd.read_csv(CITY_DATA[city])
     df["Start Time"] = pd.to_datetime(df['Start Time'])
     if (month != 0): #0 is mapped to all months
@@ -165,7 +165,7 @@ def user_stats(df):
         print("The most recent birth year is : ", dt.datetime.now().year - df["Relative Year"].min())
         print("The most common birth year is : ", df["Birth Year"].mode()[0])
     else:
-        print("There is no birth year column in this dataframe")
+        print("There is no birth year column in this panda dataframe")
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-' * 40)
 
