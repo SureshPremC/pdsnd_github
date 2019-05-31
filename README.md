@@ -12,4 +12,6 @@ Python to explore data related to bike share systems for three major cities in t
 ### Files used
   1. Python Script - bikeshare.py
   2. Data sets to analyse - chicago.csv, new_york_city.csv, washington.csv
-  
+
+### Version history
+  1. Initial commit 20190529
