@@ -165,7 +165,7 @@ def user_stats(df):
         print("The most recent birth year is : ", dt.datetime.now().year - df["Relative Year"].min())
         print("The most common birth year is : ", df["Birth Year"].mode()[0])
     else:
-        print("There is no birth year column in this dataframe")
+        print("There is no birth year column in this panda dataframe")
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-' * 40)
 
